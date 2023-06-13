@@ -205,7 +205,7 @@ body{
 /* footer */
 
 footer{
-    background: #8af593;
+    background: #04760d;
     color: #0a0a0a;
 }
 
@@ -213,20 +213,25 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .input{
-    background: transparent;
-    border: 0;
-    color: #050505;
-    outline: none;
-    border: 1px  solid #000000;
-    padding: 20px 10px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 .input::placeholder{
-    color: #000000;
-    font-family: 'raleway', 'sans-serif';
+    color: #999;
 }
 
 input[type="text"], 
@@ -238,19 +243,33 @@ input[type="email"]{
 
 .form textarea{
     width: 100%;
-    margin-bottom: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    resize: vertical;
 }
 
 input[type="submit"]{
-    width: 120px;
-    text-align: center;
-    padding: 14px 0;
+    width: auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a18cd1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover{
     cursor: pointer;
-    color: tomato;
-    background: #fff;
+    background-color: #7a5a9c;
 }
 
 @media screen and (max-width:800px){
