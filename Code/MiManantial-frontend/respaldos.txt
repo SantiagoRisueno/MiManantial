@@ -1,0 +1,62 @@
+<Box sx={style}>
+                    <form onSubmit={ handleEdit } >
+
+                        <h1 align="center">Payment</h1><br/>
+
+                            <TextField sx={{ m: 2}} fullWidth 
+                                id="payCode" 
+                                name="payCode"  
+                                label = "Pay Code" 
+                                value={formValues.payCode}
+                                 />
+                            <br/>
+                            <TextField sx={{ m: 2}} fullWidth 
+                                id="ownerName" 
+                                name="ownerName"   
+                                label="Owner Name" 
+                                value={formValues.ownerName} 
+                                  />
+                            <br/>
+                            <TextField sx={{ m: 2}} fullWidth 
+                                id="ownerCard"  
+                                name="ownerCard"  
+                                label= "Owner Card" 
+                                value={formValues.ownerCard} 
+                                 />
+                            <br/>
+                            <TextField sx={{ m: 2}} fullWidth 
+                                id="date" 
+                                name="date" 
+                                label="Pay Date" 
+                                value={formValues.date} 
+                                />
+                            <br/>
+                            <TextField sx={{ m: 2}} fullWidth 
+                                id="value"  
+                                name="value" 
+                                label="Pay value" 
+                                value={formValues.value} 
+                                />
+                            <br/>
+                            <TextField sx={{ m: 2}} fullWidth 
+                                id="payState"  
+                                name="payState" 
+                                label="Pay State" 
+                                value= "processing"
+                                />
+                            <br/>
+                        
+                        <center><Button
+                            variant="contained"
+                            size = "large"
+                            type="submit"
+                            onClose={() => setOpen(false)}
+                            sx={{ bgcolor: green[500], height: '50px', width: '90px', color: 'black'}}    
+                        >
+                            Pay
+                        </Button>
+                        </center>
+                        <br></br>
+                        
+                    </form>
+                </Box>

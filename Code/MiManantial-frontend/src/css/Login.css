@@ -1,0 +1,56 @@
+.LogIn {
+  text-align: center;
+}
+
+.LogIn-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .LogIn-logo {
+    animation: LogIn-logo-spin infinite 20s linear;
+  }
+}
+
+.LogIn-header {
+  background-image: url("../images/ManantialO.png");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #388e3c;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.LogIn-login {
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px rgb(101, 6, 114);
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.LogIn-margen {
+  margin-left: 35%;
+}
+
+.LogIn-margenT {
+  margin-top: 30px;
+}
+
+.LogIn-link {
+  color: #61dafb;
+}
+
+@keyframes LogIn-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
