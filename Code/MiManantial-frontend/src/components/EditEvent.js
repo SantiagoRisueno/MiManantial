@@ -189,7 +189,7 @@ const EditEvent = (props) => {
     
       <form onSubmit={handleEdit}>
         <Paper elevation={10} style={paperStyle} sx={style}>
-          <h1 align="center">Edit Payment</h1>
+          <h1 align="center">Editar Evento</h1>
           <br />
 
           <TextField
@@ -197,7 +197,7 @@ const EditEvent = (props) => {
             fullWidth
             id="id"
             name="id"
-            label="Event id"
+            label="id Evento"
             value={formValues.id}
             disabled
             
@@ -207,7 +207,7 @@ const EditEvent = (props) => {
             fullWidth
             id="name"
             name="name"
-            label="Event name"
+            label="Nombre del Evento"
             value={formValues.name}
             onChange = {handleChangeName}
             error={errorName}
@@ -245,7 +245,7 @@ const EditEvent = (props) => {
             fullWidth
             id="hour"
             name="hour"
-            label="Event Hour"
+            label="Hora del Evento"
             value={formValues.hour}
             onChange = {handleChangeHour}
             onBlur={handleChangeHour}
@@ -269,7 +269,7 @@ const EditEvent = (props) => {
                 color: "black",
               }}
             >
-              Edit Payment
+              Editar Evento
             </Button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Button
@@ -286,7 +286,7 @@ const EditEvent = (props) => {
                 color: "black",
               }}
             >
-              Cancel
+              Cancelar
             </Button>
           </div>
           <br></br>

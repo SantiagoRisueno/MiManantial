@@ -188,22 +188,22 @@ const AccountUpdate = () => {
         <HeaderUser />
       </Grid>
       <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-          <Link variant="h6" underline="hover" color="white" href="/Home">Home</Link>
-          <Link variant="h6" underline="hover" color="white" href="/Account">My Account</Link>
-          <Typography variant="h6">Edit</Typography>
+          <Link variant="h6" underline="hover" color="white" href="/Home">INICIO</Link>
+          <Link variant="h6" underline="hover" color="white" href="/Account">Mi Cuenta</Link>
+          <Typography variant="h6">Editar</Typography>
         </Breadcrumbs>
       <form onSubmit={handleSubmitUpdate} className="LogIn-margenT">
         <Paper elevation={10} style={paperStyle}>
           <Grid>
             <center>
-              <h1>My Account</h1>
+              <h1>Mi Cuenta</h1>
               <Avatar>{cookies.get("name").charAt(0)}</Avatar>
             </center>
           </Grid>
 
           <TextField
             sx={{ m: 2, width: 300 }}
-            label="Telephone"
+            label="Teléfono"
             placeholder={telephone}
             value={telephonePut}
             error={errorTelephone}
@@ -214,7 +214,7 @@ const AccountUpdate = () => {
 
           <TextField
             sx={{ m: 2, width: 300 }}
-            label="Email"
+            label="Correo Electrónico"
             placeholder={email}
             value={emailPut}
             error={errorEmail}
@@ -226,7 +226,7 @@ const AccountUpdate = () => {
 
           <TextField
             sx={{ m: 2, width: 300 }}
-            label="User"
+            label="Usuario"
             placeholder={user}
             value={usernamePut}
             error={errorUsername}
@@ -238,7 +238,7 @@ const AccountUpdate = () => {
 
           <TextField
             sx={{ m: 2, width: 300 }}
-            label="Password"
+            label="Contraseña"
             type="password"
             placeholder="New password"
             value={passwordPut}
@@ -264,7 +264,7 @@ const AccountUpdate = () => {
                 color: "black",
               }}
             >
-              Edit
+              Guardar
             </Button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Button
@@ -281,7 +281,7 @@ const AccountUpdate = () => {
                 color: "black",
               }}
             >
-              Cancel
+              Cancelar
             </Button>
           </div>
         </Paper>

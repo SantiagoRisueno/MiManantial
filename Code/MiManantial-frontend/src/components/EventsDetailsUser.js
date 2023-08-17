@@ -54,17 +54,17 @@ class EventsDetailsUser extends Component {
           color="success"
           startIcon={<ArrowBackIosIcon />}
         >
-          BACK
+          Regresar
         </Button>
         <br />
         <br />
         <h1>{this.state.details.name}</h1>
         <ul className="list-group">
           <li className="list-group-item">
-            Description: {this.state.details.description}
+            Descripcion: {this.state.details.description}
           </li>
-          <li className="list-group-item">Date: {this.state.details.date}</li>
-          <li className="list-group-item">Hour: {this.state.details.hour}</li>
+          <li className="list-group-item">Fecha: {this.state.details.date}</li>
+          <li className="list-group-item">Hora: {this.state.details.hour}</li>
           <br />
         </ul>
       </div>

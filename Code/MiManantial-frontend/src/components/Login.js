@@ -114,7 +114,7 @@ function Login() {
       >
         <div className="LogIn-login">
           <center>
-            <h1>Login</h1>
+            <h1>Iniciar Sesión</h1>
           </center>
           <div md={12} className="LogIn-margen">
             <Stack direction="row" spacing={5}>
@@ -134,7 +134,7 @@ function Login() {
                 id="username"
                 name="username"
                 variant="filled"
-                label="Username"
+                label="Usuario"
                 color="success"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -150,7 +150,7 @@ function Login() {
               <TextField
                 id="password"
                 name="password"
-                label="Password"
+                label="Contraseña"
                 type="password"
                 variant="filled"
                 color="success"
@@ -170,7 +170,7 @@ function Login() {
                 endIcon={<SendIcon />}
                 size="large"
               >
-                Log in
+                Ingresar
               </Button>
             </center>
           </div>

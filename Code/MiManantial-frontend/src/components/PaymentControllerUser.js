@@ -49,8 +49,8 @@ const PaymentControllerUser = () => {
       <Box>
         <HeaderUser />
         <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-            <Link variant="h6" underline="hover" color="white" href="/MenuPayment">Menu Payments</Link>
-            <Typography variant="h6">Data History</Typography>
+            <Link variant="h6" underline="hover" color="white" href="/MenuPayment">Pagos</Link>
+            <Typography variant="h6">Historial</Typography>
         </Breadcrumbs>
         <br />
         <br />
@@ -62,7 +62,7 @@ const PaymentControllerUser = () => {
             color="success"
             startIcon={<ArrowBackIosIcon />}
           >
-            BACK
+            Regresar
           </Button>
           <br />
           <br />

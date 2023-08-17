@@ -23,12 +23,13 @@ const Payment = (props) => {
   const [search, setSearch] = useState();
 
   const columns = [
-    { field: "paymentPayCode", headerName: "Pay Code", width: 150 },
-    { field: "paymentOwnerName", headerName: "Owner Name", width: 120 },
-    { field: "paymentOwnerCard", headerName: "Owner Card", width: 120 },
-    { field: "paymentDate", headerName: "Date", width: 150 },
-    { field: "paymentValue", headerName: "Value", width: 120 },
-    { field: "paymentState", headerName: "Pay State", width: 120 },
+    { field: "paymentPayCode", headerName: "Codigo de Pago", width: 150 },
+    { field: "paymentOwnerName", headerName: "Nombre del Propietario", width: 190 },
+    { field: "paymentOwnerCard", headerName: "Cédula", width: 120 },
+    { field: "paymentDate", headerName: "Fecha", width: 150 },
+    { field: "paymentValue", headerName: "Valor del Pago", width: 120 },
+    { field: "paymentState", headerName: "Estado del Pago", width: 170 },
+    { field: "paymentImage", headerName: "Comprobante de Pago", width: 170 },
   ];
 
   const peticion = () => {
@@ -85,7 +86,7 @@ const Payment = (props) => {
         boxShadow: "1px 1px 20px #333",
       }}
     >
-      <h1 style={{ color: "black" }}>Payment's Paid Out</h1>
+      <h1 style={{ color: "black" }}>Pagos Confirmados</h1>
       <br />
       <div className="barraBusqueda">
         <input

@@ -63,14 +63,14 @@ const Account = () => {
         <HeaderUser />
       </Grid>
       <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-        <Link variant="h6" underline="hover" color="white" href="/Home">Home</Link>
-        <Typography variant="h6">My Account</Typography>
+        <Link variant="h6" underline="hover" color="white" href="/Home">Inicio</Link>
+        <Typography variant="h6">Mi Cuenta</Typography>
       </Breadcrumbs>
       <form onSubmit={handleSubmit} className="LogIn-margenT">
         <Card elevation={10} style={paperStyle}>
           <Grid>
             <center>
-              <h1>My Account</h1>
+              <h1>Mi Cuenta</h1>
               <Avatar>{nameCookie.charAt(0)}</Avatar>
             </center>
           </Grid>
@@ -78,28 +78,28 @@ const Account = () => {
           <CardContent>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
               <br />
-              <strong>Name: </strong>
+              <strong>Nombre: </strong>
               {cookies.get("name")}
             </Typography>
             <hr />
 
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
               <br />
-              <strong>Last Name: </strong>
+              <strong>Apellido: </strong>
               {cookies.get("lastName")}
             </Typography>
             <hr />
 
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
               <br />
-              <strong>Username: </strong>
+              <strong>Usuario: </strong>
               {cookies.get("username")}
             </Typography>
             <hr />
 
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
               <br />
-              <strong>Identification Card: </strong>
+              <strong>Número de Cédula: </strong>
               {cookies.get("cardIdentification")}
             </Typography>
             <hr />
@@ -122,7 +122,7 @@ const Account = () => {
                   color: "black",
                 }}
               >
-                Edit
+                Editar
               </Button>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Button
@@ -139,7 +139,7 @@ const Account = () => {
                   color: "black",
                 }}
               >
-                Cancel
+                Cancelar
               </Button>
             </div>
           </CardContent>

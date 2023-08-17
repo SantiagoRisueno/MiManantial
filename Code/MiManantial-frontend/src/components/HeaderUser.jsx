@@ -11,7 +11,7 @@ const HeaderUser = (props) => {
             <img src={LogoImage} alt="Logo" className="img-fluid " />
           </div>
           <div className="col-3 align-self-center">
-            <h3>USER MENU</h3>
+            <h3>Menu de Usuario</h3>
           </div>
           <button
             class="navbar-toggler col-2 align-self-center"

@@ -246,14 +246,14 @@ const FormPayment = () => {
         <HeaderAdmin />
       </Grid>
       <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-        <Link variant="h6" underline="hover" color="white" href="/PaymentControllerAdmin">Payment's Data</Link>
-        <Typography variant="h6" >Add Payment</Typography>
+        <Link variant="h6" underline="hover" color="white" href="/PaymentControllerAdmin">Gestionar Pagos</Link>
+        <Typography variant="h6" >Añadir Pago</Typography>
       </Breadcrumbs>
       <form onSubmit={handleSubmit} className="LogIn-margenT ">
         <Paper elevation={10} style={paperStyle}>
           <Grid>
             <center>
-            <h1 align="center">Create Payment</h1>
+            <h1 align="center">Crear Pago</h1>
             </center>
           </Grid>
           <br />
@@ -262,7 +262,7 @@ const FormPayment = () => {
             id="paymentPayCode"
             name="paymentPayCode"
             placeholder="Ex:1231"
-            label="Pay Code"
+            label="Codigo de Pago"
             value={payCode}
             error={errorPayCode}
             helperText={validationPayCode}
@@ -272,7 +272,7 @@ const FormPayment = () => {
           <br/><br/>
 
           <FormControl fullWidth>
-            <InputLabel id="paymentOwnerCard">Owner Card</InputLabel>
+            <InputLabel id="paymentOwnerCard">Numero de Cédula</InputLabel>
             <Select
               fullWidth
               labelId="paymentOwnerCard"
@@ -296,7 +296,7 @@ const FormPayment = () => {
             id="paymentOwnerName"
             name="paymentOwnerName"
             placeholder="Ex: Usuari"
-            label="Owner Name"
+            label="Nombre de Usario"
             value={ownerName}
             error={errorOwnerName}
             helperText={validationOwnerName}
@@ -306,7 +306,7 @@ const FormPayment = () => {
 
           <LocalizationProvider dateAdapter={AdapterDateFns} fullWidth>
             <MobileDatePicker
-              label="Pay Date"
+              label="Fecha de Pago"
               inputFormat="yyyy-MM-dd"
               value={dateaaux}
               onChange={onChangeDate}
@@ -320,7 +320,7 @@ const FormPayment = () => {
             id="paymentValue"
             name="paymentValue"
             placeholder="300"
-            label="Pay value"
+            label="Valor a Pagar"
             value={value}
             error={errorValue}
             helperText={validationValue}
@@ -344,7 +344,7 @@ const FormPayment = () => {
                 color: "black",
               }}
             >
-              Add Payment
+              Guardar
             </Button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Button
@@ -361,7 +361,7 @@ const FormPayment = () => {
                 color: "black",
               }}
             >
-              Cancel
+              Cancelar
             </Button>
           </div>
           <br />

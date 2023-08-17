@@ -53,19 +53,19 @@ const cookies = new Cookies();
                     <Card sx={{ minWidth: 275 } }>
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }}  color="text.secondary" gutterBottom>
-                            <h4><EventIcon color="success" fontSize="large"/>Event Id: {this.state.item.id} </h4>
+                            <h4><EventIcon color="success" fontSize="large"/>Id de Evento: {this.state.item.id} </h4>
                             </Typography>
                             <Typography variant="h5" component="div">
                             {bull} {this.state.item.name} {bull}
                             </Typography>
                             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            Description of the Event:
+                            Descripcion del evento:
                             </Typography>
                             <Typography variant="body2">
                             {this.state.item.description}
                             </Typography>
                             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            Date and Hour:
+                            Fecha y Hora:
                             </Typography>
                             <Typography variant="body2">
                             {this.state.item.date}

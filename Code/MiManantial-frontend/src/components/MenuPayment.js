@@ -63,12 +63,12 @@ const MenuPayment = () => {
     <div>
       <HeaderUser />
       <Breadcrumbs aria-label="breadcrumb">
-            <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Menu Payments</Typography>
+            <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Pagos</Typography>
         </Breadcrumbs> 
       <br></br>
       <div className="container item">
         <center>
-          <h1>Menu Payments</h1>
+          <h1>Pagos</h1>
         </center>
         <br />
         <div className="row justify-content-md-center">
@@ -77,7 +77,7 @@ const MenuPayment = () => {
             <Card sx={{ maxWidth: '100%' }}>
               <CardContent>
                 <Typography variant="h5" component="div">
-                  <PendingActionsIcon fontSize="large" /> Pending Payments:
+                  <PendingActionsIcon fontSize="large" /> Pagos Pendientes:
                 </Typography><br/>
                 <Typography
                   sx={{ mb: 1.5 }}
@@ -85,7 +85,7 @@ const MenuPayment = () => {
                 ></Typography>
                 <Typography variant="body2"></Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  Here you can see the payments that you have not made yet.
+                Aquí puede ver los pagos que aún no ha realizado.
                 </Typography><br/>
                 <div className="row justify-content-center">
                   <div className="col-2 p-1 ">
@@ -111,7 +111,7 @@ const MenuPayment = () => {
                       variant="contained"
                       endIcon={<ArrowForwardIcon />}
                     >
-                     ENTER
+                     INGRESAR
                     </Button>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const MenuPayment = () => {
             <Card sx={{ maxWidth: '100%' }}>
               <CardContent>
                 <Typography variant="h5" component="div">
-                  <PendingOutlinedIcon fontSize="large" /> Payments in process:
+                  <PendingOutlinedIcon fontSize="large" /> Pagos en revisión:
                 </Typography>
                 <br/>
                 <Typography
@@ -132,8 +132,7 @@ const MenuPayment = () => {
                 ></Typography>
                 <Typography variant="body2"></Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  Payments that have not been confirmed yet, awaiting management
-                  approval.
+                Pagos que aún no han sido confirmados, en espera de aprobación por parte de la gerencia.
                 </Typography>
                 <div className="row justify-content-center">
                   <div className="col-2 p-2 ">
@@ -154,7 +153,7 @@ const MenuPayment = () => {
                       variant="contained"
                       endIcon={<ArrowForwardIcon />}
                     >
-                      ENTER
+                      INGRESAR
                     </Button>
                   </div>
                 </div>
@@ -167,7 +166,7 @@ const MenuPayment = () => {
               <CardContent>
                 <Typography variant="h5" component="div">
                   <LibraryAddCheckOutlinedIcon fontSize="large" />
-                  Payments made successfully:
+                  Pagos confirmados:
                 </Typography>
 
                 <Typography
@@ -176,7 +175,7 @@ const MenuPayment = () => {
                 ></Typography>
                 <Typography variant="body2"></Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  Here are the payments that have been confirmed successfully.
+                Aquí están los pagos que han sido confirmados con éxito
                 </Typography><br/>
                 <div className="row justify-content-center">
                   <div className="col-2 p-1 ">
@@ -202,7 +201,7 @@ const MenuPayment = () => {
                       variant="contained"
                       endIcon={<ArrowForwardIcon />}
                     >
-                      ENTER
+                      INGRESAR
                     </Button>
                   </div>
                 </div>
@@ -215,7 +214,7 @@ const MenuPayment = () => {
               <CardContent>
                 <Typography variant="h5" component="div">
                   <ManageSearchIcon fontSize="large" />
-                  Detailed Payment History:
+                  Historial de Pagos:
                 </Typography>
 
                 <Typography
@@ -224,8 +223,7 @@ const MenuPayment = () => {
                 ></Typography>
                 <Typography variant="body2"></Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  Here you can see the history of your payments in detail, you
-                  can save a report.
+                Aquí puede ver el historial de sus pagos.
                 </Typography>
                 <div className="row justify-content-center">
                   <div className="col-2 p-1 ">
@@ -251,7 +249,7 @@ const MenuPayment = () => {
                       variant="contained"
                       endIcon={<ArrowForwardIcon />}
                     >
-                      ENTER
+                      INGRESAR
                     </Button>
                   </div>
                 </div>

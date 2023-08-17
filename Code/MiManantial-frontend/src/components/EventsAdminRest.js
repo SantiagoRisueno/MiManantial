@@ -81,12 +81,12 @@ class EventsAdminRest extends Component {
       <div className="">
         <HeaderAdmin /> 
         <Breadcrumbs aria-label="breadcrumb">
-          <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Events Created</Typography>
+          <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Eventos Creados</Typography>
         </Breadcrumbs>
         <br></br>
         <div className="container item">
           <div className="col-sm-12 p-4 text-center">
-            <h2 className="p-2 ">Events Created</h2>
+            <h2 className="p-2 ">Eventos Creados</h2>
             <Button
               variant="contained"
               className="btn-back "
@@ -95,7 +95,7 @@ class EventsAdminRest extends Component {
               startIcon={<AddIcon />}
               sx={{ bgcolor: green[500] }}
             >
-              Add Event
+              añadir Evento
             </Button>
           </div>
 

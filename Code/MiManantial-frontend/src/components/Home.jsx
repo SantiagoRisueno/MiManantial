@@ -81,7 +81,7 @@ const Home = () => {
     <div>
       <HeaderUser />
       <Breadcrumbs aria-label="breadcrumb">
-          <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Home</Typography>
+          <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>INICIO</Typography>
       </Breadcrumbs> 
       <br />
       <div className=" container item ">
@@ -94,9 +94,9 @@ const Home = () => {
               onChange={handleChange}
               aria-label="basic tabs example"
             >
-              <Tab label="Welcome" {...a11yProps(0)} />
-              <Tab label="River" {...a11yProps(1)} />
-              <Tab label="Activities" {...a11yProps(2)} />
+              <Tab label="Bienvenidos" {...a11yProps(0)} />
+              <Tab label="Imagenes" {...a11yProps(1)} />
+              <Tab label="Actividades" {...a11yProps(2)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
@@ -110,21 +110,19 @@ const Home = () => {
                         color="text.secondary"
                         gutterBottom
                       >
-                        We are happy to see you again...
+                        Estamos felices de verte de nuevo...
                       </Typography>
                       <Typography variant="h5" component="div">
-                        {bull}The Manantial Urbanization{bull}
+                        {bull}Urbanización - El Manantial{bull}
                       </Typography>
                       <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Remember:
+                        Recuerda:
                       </Typography>
                       <Typography variant="body2">
-                        We are glad that you are part of this wonderful urbanization
-                        called Manantial where you can make payments, upcoming events, see the payments, etc.
-                        Remember that we are responsible for the care of common areas within the
-                        urbanization, remember to leave better than what you find. <br />Enjoy your visit.
+                      Nos alegra que formes parte de esta maravillosa urbanización llamada Manantial donde podrás realizar pagos, próximos eventos, ver los pagos, etc. Recuerda que nosotros nos encargamos del cuidado de las áreas comunes dentro de la urbanización, recuerda salir mejor de lo que encontrar.
+ <br />Disfruta tu visita.
                         <br />
-                        {'"Att: The Administration"'}
+                        {'"Atentamente: La Administración"'}
                       </Typography>
                     </CardContent>
                   </Card>
@@ -146,27 +144,24 @@ const Home = () => {
                 <div class="col-sm">
                   <Card sx={{ minWidth: 275 }}>
                     <CardContent>
-                      <Typography
+                    <Typography
                         sx={{ fontSize: 14 }}
                         color="text.secondary"
                         gutterBottom
                       >
-                        We are happy to see you again...
+                        Estamos felices de verte de nuevo...
                       </Typography>
                       <Typography variant="h5" component="div">
-                        {bull}The Manatial Urbanization{bull}
+                        {bull}Urbanización - El Manantial{bull}
                       </Typography>
                       <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Remember:
+                        Recuerda:
                       </Typography>
                       <Typography variant="body2">
-                        We are happy that you are part of this wonderful
-                        urbanization, please remember that we are responsible
-                        for the care of the common areas within the
-                        urbanization, remember to leave better than what you
-                        find. Enjoy your visit..
+                      Nos alegra que formes parte de esta maravillosa urbanización llamada Manantial donde podrás realizar pagos, próximos eventos, ver los pagos, etc. Recuerda que nosotros nos encargamos del cuidado de las áreas comunes dentro de la urbanización, recuerda salir mejor de lo que encontrar.
+ <br />Disfruta tu visita.
                         <br />
-                        {'"Att: The Administration"'}
+                        {'"Atentamente: La Administración"'}
                       </Typography>
                     </CardContent>
                   </Card>
@@ -184,27 +179,24 @@ const Home = () => {
                 <div class="col-sm">
                   <Card sx={{ minWidth: 275 }}>
                     <CardContent>
-                      <Typography
+                    <Typography
                         sx={{ fontSize: 14 }}
                         color="text.secondary"
                         gutterBottom
                       >
-                        We are happy to see you again...
+                        Estamos felices de verte de nuevo...
                       </Typography>
                       <Typography variant="h5" component="div">
-                        {bull}The Manatial Urbanization{bull}
+                        {bull}Urbanización - El Manantial{bull}
                       </Typography>
                       <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        Remember:
+                        Recuerda:
                       </Typography>
                       <Typography variant="body2">
-                        We are happy that you are part of this wonderful
-                        urbanization, please remember that we are responsible
-                        for the care of the common areas within the
-                        urbanization, remember to leave better than what you
-                        find. Enjoy your visit..
+                      Nos alegra que formes parte de esta maravillosa urbanización llamada Manantial donde podrás realizar pagos, próximos eventos, ver los pagos, etc. Recuerda que nosotros nos encargamos del cuidado de las áreas comunes dentro de la urbanización, recuerda salir mejor de lo que encontrar.
+ <br />Disfruta tu visita.
                         <br />
-                        {'"Att: The Administration"'}
+                        {'"Atentamente: La Administración"'}
                       </Typography>
                     </CardContent>
                   </Card>

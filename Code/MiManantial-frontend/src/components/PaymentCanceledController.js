@@ -45,8 +45,8 @@ const PaymentCanceledControllerUser = () => {
       <Box>
         <HeaderUser />
         <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-          <Link variant="h6" underline="hover" color="white" href="/MenuPayment">Menu Payments</Link>
-          <Typography variant="h6">Payment's Paid Out</Typography>
+          <Link variant="h6" underline="hover" color="white" href="/MenuPayment">Pagos</Link>
+          <Typography variant="h6">Pagos Confirmados</Typography>
       </Breadcrumbs>
         <br />
         <br />
@@ -58,7 +58,7 @@ const PaymentCanceledControllerUser = () => {
             color="success"
             startIcon={<ArrowBackIosIcon />}
           >
-            BACK
+            Regresar
           </Button>
           <br />
           <br />

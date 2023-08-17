@@ -192,8 +192,8 @@ const  AddEvents = () => {
           <HeaderAdmin />
         </Grid>
         <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-            <Link variant="h6" underline="hover" color="white" href="/EventsAdminRest">Events Created</Link>
-            <Typography variant="h6">Add Events</Typography>
+            <Link variant="h6" underline="hover" color="white" href="/EventsAdminRest">Eventos</Link>
+            <Typography variant="h6">Añadir Eventos</Typography>
         </Breadcrumbs>
         <br/>
         <div className="container">
@@ -204,7 +204,7 @@ const  AddEvents = () => {
             color="success"
             startIcon={<ArrowBackIosIcon />}
           >
-            BACK
+            Regresar
           </Button>
         </div>
         <form
@@ -218,13 +218,13 @@ const  AddEvents = () => {
             margin: "10px auto"}}
           >
             <Grid>
-                <h1 align="center">Create Events</h1>
+                <h1 align="center">Crear Eventos</h1>
             </Grid>
             <br /><br />
             <TextField
               fullWidth
               id="standard-basic"
-              label="Event Id:"
+              label="Codigo de Evento:"
               variant="outlined"
               value={id}
               onChange={onChangeEventId}
@@ -237,7 +237,7 @@ const  AddEvents = () => {
             <TextField
               fullWidth
               id="standard-basic"
-              label="Event Name:"
+              label="Nombre del Evento:"
               variant="outlined"
               name="name"
               value={name}
@@ -250,7 +250,7 @@ const  AddEvents = () => {
             <TextField
               fullWidth
               id="standard-basic"
-              label="Description:"
+              label="Descripción:"
               variant="outlined"
               name="description"
               value={description}
@@ -264,7 +264,7 @@ const  AddEvents = () => {
               fullWidth
               id="standard-basic"
               variant="outlined"
-              label="Event Date:"
+              label="Fecha:"
               placeholder="Ex:12/12/2021"
               value={date}
               onChange={onChangeEventDate}
@@ -277,7 +277,7 @@ const  AddEvents = () => {
               fullWidth
               id="standard-basic"
               variant="outlined"
-              label="Event Hour:"
+              label="Hora:"
               placeholder="Ex:19:00"
               value={hour}
               onChange={onChangeEventHour}
@@ -301,7 +301,7 @@ const  AddEvents = () => {
                   color: "black",
                 }}
               >
-                Add Event
+                Añadir Evento
               </Button>
               
             </div>

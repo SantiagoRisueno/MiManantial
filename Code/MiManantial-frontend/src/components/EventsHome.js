@@ -41,7 +41,7 @@ class EventsHome extends Component {
     return (
       <div className="container item">
         <br />
-        <h2> Actual Events :</h2>
+        <h2> Eventos Actuales:</h2>
         <br />
         <div className="row justify-content-md-center ">{eventItems}</div>
         <br />

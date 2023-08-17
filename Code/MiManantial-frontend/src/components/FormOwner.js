@@ -167,7 +167,7 @@ const FormOwner = () => {
       setValidationOwnerLastName("Correct Last Name");
       setErrorOwnerLastName(false);
     } else {
-      setValidationOwnerLastName("Wrong Last Name, Example: Moreno");
+      setValidationOwnerLastName("Wrong Last Name, Example: Mosquera");
       setErrorOwnerLastName(true);
       formVacio()
     }
@@ -319,14 +319,14 @@ const FormOwner = () => {
         <HeaderAdmin />
       </Grid>
       <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-        <Link variant="h6" underline="hover" color="white" href="/OwnerController">Owner's Data</Link>
-        <Typography variant="h6">Owners Create</Typography>
+        <Link variant="h6" underline="hover" color="white" href="/OwnerController">Gestionar Propietarios</Link>
+        <Typography variant="h6">Crear Propietario</Typography>
       </Breadcrumbs>
       <form onSubmit={handleSubmit} className="LogIn-margenT ">
         <Paper elevation={10} style={paperStyle}>
             <Grid>
               <center>
-                <h1 align="center">Create Owner</h1>
+                <h1 align="center">Crear Propietario</h1>
               </center>
             </Grid>
           <br/><br />
@@ -337,7 +337,7 @@ const FormOwner = () => {
                 id="ownerName"
                 name="ownerName"
                 placeholder="Ex:Josue"
-                label="Name"
+                label="Nombre"
                 sx={{ width: "100%" }}
                 value={ownerName}
                 error={errorOwnerName}
@@ -352,8 +352,8 @@ const FormOwner = () => {
                 fullWidth
                 id="ownerLastName"
                 name="ownerLastName"
-                placeholder="Ex:Moreno"
-                label="Last Name"
+                placeholder="Ex:Mosquera"
+                label="Apellido"
                 value={ownerLastName}
                 error={errorOwnerLastName}
                 helperText={validationOwnerLastName}
@@ -371,7 +371,7 @@ const FormOwner = () => {
                 id="ownerCard"
                 name="ownerCard"
                 placeholder="Ex:1719039305"
-                label="Identification Card"
+                label="Número de Cedula"
                 value={ownerCard}
                 error={errorOwnerCard}
                 helperText={validationOwnerCard}
@@ -386,7 +386,7 @@ const FormOwner = () => {
                 id="ownerTelephone"
                 name="ownerTelephone"
                 placeholder="Ex:0998060648"
-                label="Telephone"
+                label="Teléfono"
                 value={ownerTelephone}
                 error={errorOwnerTelephone}
                 helperText={validationOwnerTelephone}
@@ -403,7 +403,7 @@ const FormOwner = () => {
                 id="ownerEmail"
                 name="ownerEmail"
                 placeholder="Ex:jamoreno@hotmail.com"
-                label="Email:"
+                label="Correo Electrónico:"
                 value={ownerEmail}
                 error={errorOwnerEmail}
                 helperText={validationOwnerEmail}
@@ -417,8 +417,8 @@ const FormOwner = () => {
                 fullWidth
                 id="ownerUserName"
                 name="ownerUserName"
-                placeholder="Ex:jamoreno15"
-                label="Username"
+                placeholder="Ex:Nathaniel07"
+                label="Usuario"
                 value={ownerUsername}
                 error={errorOwnerUsername}
                 helperText={validationOwnerUsername}
@@ -437,7 +437,7 @@ const FormOwner = () => {
                 name="ownerPassword"
                 placeholder="Ex:12345"
                 type="password"
-                label="Password"
+                label="Contraseña"
                 value={ownerPassword}
                 error={errorOwnerPassword}
                 helperText={validationOwnerPassword}
@@ -452,7 +452,7 @@ const FormOwner = () => {
                 id="ownerNumberHouse"
                 name="ownerNumberHouse"
                 placeholder="Ex:72"
-                label="Number of House"
+                label="Número de Casa"
                 value={ownerNumberHouse}
                 error={errorOwnerNumberHouse}
                 helperText={validationOwnerNumberHouse}
@@ -477,7 +477,7 @@ const FormOwner = () => {
                 color: "black",
               }}
             >
-              Add Owner
+              Guardar
             </Button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Button
@@ -494,7 +494,7 @@ const FormOwner = () => {
                 color: "black",
               }}
             >
-              Cancel
+              Cancelar
             </Button>
           </div>
           <br />

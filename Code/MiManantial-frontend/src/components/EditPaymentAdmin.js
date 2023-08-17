@@ -202,7 +202,7 @@ const EditPaymentAdmin = (props) => {
       
         <form onSubmit={handleEdit}>
           <Paper elevation={10} style={paperStyle} sx={style}>
-            <h1 align="center">Edit Payment</h1>
+            <h1 align="center">Editar Pago</h1>
             <br />
 
             <TextField
@@ -210,7 +210,7 @@ const EditPaymentAdmin = (props) => {
               fullWidth
               id="payCode"
               name="payCode"
-              label="Pay Code"
+              label="Codigo del Pago"
               value={formValues.payCode}
               error={errorPayCode}
               helperText={validationPayCode}
@@ -222,7 +222,7 @@ const EditPaymentAdmin = (props) => {
               fullWidth
               id="date"
               name="date"
-              label="Pay Date"
+              label="Fecha de Pago"
               value={formValues.date}
               error={errorDate}
               helperText={validationDate}
@@ -235,7 +235,7 @@ const EditPaymentAdmin = (props) => {
               fullWidth
               id="value"
               name="value"
-              label="Pay value"
+              label="Valor a Pagar"
               value={formValues.value}
               error={errorValue}
               helperText={validationValue}
@@ -244,19 +244,20 @@ const EditPaymentAdmin = (props) => {
             />
 
             <FormControl sx={{ m: 2 }} fullWidth>
-              <InputLabel id="payState">Payment State</InputLabel>
+              <InputLabel id="payState">Estado del Pago</InputLabel>
               <Select
                 fullWidth
                 labelId="payState"
+                label="Estado del Pago"
                 name="payState"
                 id="payState"
                 value={formValues.payState}
                 onChange={handleChangePayState}
-                label="Pay State"
+                
               >
-                <MenuItem value="processing">Processing</MenuItem>
-                <MenuItem value="paid out">Paid out</MenuItem>
-                <MenuItem value="pending">Pending</MenuItem>
+                <MenuItem value="processing">En revision</MenuItem>
+                <MenuItem value="paid out">Pagado</MenuItem>
+                <MenuItem value="pending">Pendiente</MenuItem>
               </Select>
             </FormControl>
 
@@ -276,7 +277,7 @@ const EditPaymentAdmin = (props) => {
                   color: "black",
                 }}
               >
-                Edit Payment
+                Guardar
               </Button>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Button
@@ -293,7 +294,7 @@ const EditPaymentAdmin = (props) => {
                   color: "black",
                 }}
               >
-                Cancel
+                Cancelar
               </Button>
             </div>
             <br></br>

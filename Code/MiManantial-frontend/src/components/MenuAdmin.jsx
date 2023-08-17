@@ -40,7 +40,7 @@ export default function AccountMenu() {
             className="buttonMenu"
             startIcon={<SupervisedUserCircleIcon fontSize="medium" />}
           >
-            OWNERS
+            Gestionar Propietarios
           </Button>
         </li>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -50,7 +50,7 @@ export default function AccountMenu() {
             className="buttonMenu"
             startIcon={<LocalAtmOutlinedIcon fontSize="medium" />}
           >
-            PAYMENTS
+            Gestionar Pagos
           </Button>
         </li>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -60,7 +60,7 @@ export default function AccountMenu() {
             className="buttonMenu"
             startIcon={<EventIcon fontSize="medium" />}
           >
-            EVENTS
+            Gestionar Eventos
           </Button>
         </li>
       </ul>
@@ -76,7 +76,7 @@ export default function AccountMenu() {
         ></a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li className="dropdown-item btn" onClick={cerrarSesion}>
-            Log out
+            Cerrar Sesión
           </li>
         </ul>
       </div>

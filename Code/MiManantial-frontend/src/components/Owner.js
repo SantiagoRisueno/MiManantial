@@ -11,8 +11,10 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import PageviewIcon from "@mui/icons-material/Pageview";
 import { useNavigate } from "react-router";
+import EditOwner from "./EditOwner";
 
 const cookies = new Cookies();
+
 
 const Owner = (props) => {
   const owners = props.owners;
@@ -34,17 +36,17 @@ const Owner = (props) => {
   };
 
   const columns = [
-    { field: "ownerCard", headerName: "Identification Card", width: 150 },
-    { field: "ownerName", headerName: "Full Name", width: 120 },
-    { field: "ownerLastName", headerName: "Full Surname", width: 120 },
-    { field: "ownerTelephone", headerName: "Telephone", width: 120 },
-    { field: "ownerEmail", headerName: "Email", width: 190 },
-    { field: "ownerUsername", headerName: "Username", width: 150 },
-    { field: "ownerPassword", headerName: "Password", width: 150 },
-    { field: "ownerNumberHouse", headerName: "Numer House", width: 120 },
+    { field: "ownerCard", headerName: "Cédula", width: 150 },
+    { field: "ownerName", headerName: "Nombre", width: 120 },
+    { field: "ownerLastName", headerName: "Apellido", width: 120 },
+    { field: "ownerTelephone", headerName: "Teléfono", width: 120 },
+    { field: "ownerEmail", headerName: "Correo", width: 190 },
+    { field: "ownerUsername", headerName: "Usuario", width: 150 },
+    { field: "ownerPassword", headerName: "Contraseña", width: 150 },
+    { field: "ownerNumberHouse", headerName: "Numero de Casa", width: 120 },
     {
       field: "actions",
-      headerName: "Actions",
+      headerName: "Acciones",
       sortable: false,
       width: 100,
       disableClickEventBubbling: true,
@@ -54,6 +56,7 @@ const Owner = (props) => {
             index={params.row.id}
             handleDeleteRegister={handleDeleteRegister}
           />
+
         </div>
       ),
     },
@@ -107,12 +110,12 @@ const Owner = (props) => {
         boxShadow: "1px 1px 20px #333",
       }}
     >
-      <h1 style={{ color: "black" }}>Owner's Data</h1>
+      <h1 style={{ color: "black" }}>Gestionar Propietarios</h1>
       <br />
       <div className="barraBusqueda">
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Buscar"
           className="textField"
           name="busqueda"
           value={search}
@@ -137,7 +140,7 @@ const Owner = (props) => {
         startIcon={<AddIcon />}
         onClick={OnclickInsertar}
       >
-        Add Owner
+        Añadir Propietario
       </Button>
       <br></br>
       <div style={{ height: 400, width: "100%" }}>

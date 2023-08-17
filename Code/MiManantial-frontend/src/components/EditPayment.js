@@ -30,6 +30,7 @@ const Pay = (props) => {
   const handleUpdateRegister = props.handleUpdateRegister;
 
   const [open, setOpen] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null); // Nuevo estado para el archivo
 
   const [formValues, setformValues] = useState({
     id: data.id,
@@ -38,13 +39,28 @@ const Pay = (props) => {
     ownerName: data.paymentOwnerName,
     date: data.paymentDate,
     value: data.paymentValue,
-    payState: "processing",
+    payState: "Pendiente",
   });
   const navigate = useNavigate();
 
-  const handleEdit = () => {
-    handleUpdateRegister(formValues);
+ 
+  const handleFileUpload = (e) => {
+    setSelectedFile(e.target.files[0]);
   };
+
+  const handleEdit = (e) => {
+    e.preventDefault();
+
+    const updatedFormValues = {
+      ...formValues,
+      uploadedFile: selectedFile,
+    };
+
+    handleUpdateRegister(updatedFormValues);
+    setOpen(false);
+  };
+
+
 
   const handleOpenModal = () => {
     setOpen(true);
@@ -65,7 +81,7 @@ const Pay = (props) => {
         onClick={handleOpenModal}
       >
         <Button sx={{ bgcolor: green[500], height: "40px", width: "50px" }}>
-          Pay
+          PAGAR
         </Button>
       </IconButton>
 
@@ -75,7 +91,7 @@ const Pay = (props) => {
           
             <CardContent>
               <Typography variant="h5" component="div">
-                Payment prosessing
+                Enviar Pago
               </Typography>
               <Typography
                 sx={{ mb: 1.5 }}
@@ -84,7 +100,7 @@ const Pay = (props) => {
                 name="payCode"
               >
                 <br />
-                <strong>Pay Code: </strong>
+                <strong>Codigo de Pago: </strong>
                 {formValues.payCode}
               </Typography>
               <hr />
@@ -95,7 +111,7 @@ const Pay = (props) => {
                 id="ownerName"
                 name="ownerName"
               >
-                <strong>Owner Name: </strong>
+                <strong>Nombre del propietario: </strong>
                 {formValues.ownerName}
               </Typography>
               <hr />
@@ -106,7 +122,7 @@ const Pay = (props) => {
                 id="ownerCard"
                 name="ownerCard"
               >
-                <strong>Owner Card: </strong>
+                <strong>Cédula: </strong>
                 {formValues.ownerCard}
               </Typography>
               <hr />
@@ -117,7 +133,7 @@ const Pay = (props) => {
                 id="date"
                 name="date"
               >
-                <strong>Pay Date: </strong>
+                <strong>Fecha: </strong>
                 {formValues.date}
               </Typography>
               <hr />
@@ -128,11 +144,18 @@ const Pay = (props) => {
                 id="payState"
                 name="payState"
               >
-                <strong>Pay State: </strong>
+                <strong>Estado de pago: </strong>
                 {formValues.payState}
               </Typography>
               <hr />
 
+              <Typography variant="body2">
+                <br />
+              </Typography>
+
+              <Typography variant="body2">
+                <input type="file" onChange={handleFileUpload} />
+              </Typography>
               <Typography variant="body2">
                 <br />
               </Typography>
@@ -142,7 +165,7 @@ const Pay = (props) => {
                   className="btn-back"
                   color="success"
                   variant="contained"
-                  variant="contained"
+                  
                   size="large"
                   type="submit"
                   onClose={() => setOpen(false)}
@@ -153,14 +176,14 @@ const Pay = (props) => {
                     color: "black",
                   }}
                 >
-                  Pay
+                  Enviar
                 </Button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Button
                   className="btn-back"
                   color="error"
                   variant="contained"
-                  variant="contained"
+                
                   size="large"
                   onClick={() => setOpen(false)}
                   sx={{
@@ -170,7 +193,7 @@ const Pay = (props) => {
                     color: "black",
                   }}
                 >
-                  Cancel
+                  Cancelar
                 </Button>
               </div>
             </CardContent>

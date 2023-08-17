@@ -55,7 +55,7 @@ const PaymentControllerAdmin = () => {
       <Box>
         <GeneralMenu />
         <Breadcrumbs aria-label="breadcrumb">
-                    <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Payment's Data</Typography>
+                    <Typography  variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Gestionar Pagos</Typography>
         </Breadcrumbs>
         <br />
         <br />

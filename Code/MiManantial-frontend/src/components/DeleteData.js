@@ -6,7 +6,7 @@ const DeleteData = (props) => {
   const handleDeleteRegister = props.handleDeleteRegister;
 
   const handleDeleteClick = () => {
-    const option = window.confirm("¿Do you want to delete the owner?");
+    const option = window.confirm("¿Desea eliminar un propietario?");
 
     if (option === true) {
       handleDeleteRegister(index);

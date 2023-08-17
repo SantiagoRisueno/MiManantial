@@ -57,8 +57,8 @@ const PaymentPendingControllerUser = () => {
       <Box>
         <HeaderUser />
         <Breadcrumbs variant="h6" sx={{ marginLeft:'50px',color: 'white' }} aria-label="breadcrumb">
-            <Link variant="h6" underline="hover" color="white" href="/MenuPayment">Menu Payments</Link>
-            <Typography variant="h6" >Payment's Pending</Typography>
+            <Link variant="h6" underline="hover" color="white" href="/MenuPayment">Pagos</Link>
+            <Typography variant="h6" >Pagos Pendientes</Typography>
         </Breadcrumbs> 
         <br />
         <br />
@@ -70,7 +70,7 @@ const PaymentPendingControllerUser = () => {
             color="success"
             startIcon={<ArrowBackIosIcon />}
           >
-            BACK
+            Regresar
           </Button>
           <br />
           <br />

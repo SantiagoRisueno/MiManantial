@@ -53,7 +53,7 @@ const OwnerController = () => {
             <Box>
                 <GeneralMenu />
                 <Breadcrumbs aria-label="breadcrumb">
-                    <Typography variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Owner's Data</Typography>
+                    <Typography variant="h6" sx={{ marginLeft:'50px',color: 'white' }}>Gestionar Propietarios</Typography>
                 </Breadcrumbs> 
                 <br/><br/>
                 <Owner owners={owners} deleteRegister={deleteRegister} updateOwnerRegister = {updateOwnerRegister}/>
